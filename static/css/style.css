@@ -11,47 +11,170 @@ body{
     background: radial-gradient(circle, rgb(76, 1, 116) 0%, rgb(99, 1, 66) 100%);
 }
 .container{
-    display:flexbox;
-    margin: 0 auto;
-    text-align: center;
-    width: 700px;
-}
-.heading{
-    font-size: large;
-    font-weight: bolder;
-}
-.profile-pic{
-    align-items: center;
-    margin:10px auto;
-    width: 15%;
-    border-radius: 50%;
-}
-.bio{
-    margin:10px auto;
-    font-size: 20px;
-    font-weight:normal;
-    width:500px;
-}
-.buttons{
     display:flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
 }
-.links{
-    margin:10px 0;
+.profile-pic{
     align-items: center;
-    background-color: rgb(25, 1, 39);
-    border: solid, 0.2px;
-    border-color: rgb(25, 1, 39);
-    /* border-radius: 33px; */
-    font-size: 20px;
-    padding:12px 300px;
+    margin:10px auto;
+    width: 10%;
+    border-radius: 50%;
 }
-.links a{
-    text-align: center;
-    text-decoration: none;
+.head{
+    margin: 11px auto;
+    font-size: 24px;
+    font-weight: bold;
+    width: 500px;
+}
+.bio{
+    margin: 4px auto;
+    font-size: 17px;
+    font-weight: normal;
+    width: 500px;
+}
+  
+.links {
+    box-sizing: border-box;
+    width: 600px;
+    align-items: center;
+    background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
+    margin: 10px auto;
+    padding-top:12px;
+    padding-bottom: 12px;
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    background-size: 200% auto;          
+    box-shadow: 0 0 20px rgb(31, 0, 50);
+    border-radius: 30px;
+    border-color: transparent;
     color: white;
+    text-decoration: none; 
+}
+
+.links:hover {
+    background-position:right; /* change the direction of the change here */
+    transition:ease-out;
+    color: rgb(54, 1, 51);
+    text-decoration: none;
+}
+
+/* REsponsive css */
+/* 0 to 600px */
+@media screen and (max-width: 700px){
+    .links{
+        width:300px;
+        font-size: 14px;
+        box-sizing: border-box;
+        align-items: center;
+        background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
+        margin: 10px auto;
+        padding-top:12px;
+        padding-bottom: 12px;
+        transition: 0.5s ease-in-out;
+        background-size: 200% auto;          
+        box-shadow: 0 0 20px rgb(31, 0, 50);
+        border-radius: 30px;
+        border-color: transparent;
+        color: white;
+        text-decoration: none; 
+    }
+    .profile-pic{
+        align-items: center;
+        margin:10px auto;
+        border-radius: 50%;
+        width:30%;
+    }
+    .head{
+        margin: 11px auto;
+        font-size: 24px;
+        width: 390px;
+        font-size:20px;
+    }
+    .bio{
+        font-size: 15px;
+        width: 350px;
+        margin: 4px auto;
+        font-weight: normal;
+    }
+}
+@media screen and (max-width: 400px) {
+    .links{
+        width:200px;
+        font-size: 14px;
+        box-sizing: border-box;
+        align-items: center;
+        background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
+        margin: 10px auto;
+        padding-top:12px;
+        padding-bottom: 12px;
+        transition: 0.5s ease-in-out;
+        background-size: 200% auto;          
+        box-shadow: 0 0 20px rgb(31, 0, 50);
+        border-radius: 30px;
+        border-color: transparent;
+        color: white;
+        text-decoration: none; 
+    }
+    .profile-pic{
+        display: flex;
+        align-items: center;
+        margin:10px auto;
+        border-radius: 50%;
+        width:30%;
+    }
+    .head{
+        margin: 11px auto;
+        font-size: 24px;
+        width: 390px;
+        font-size:20px;
+    }
+    .bio{
+        font-size: 15px;
+        width: 233px;
+        margin: 4px auto;
+        font-weight: normal;
+    }
+
+    @media screen and (max-width: 390px) {
+        .links{
+            width:200px;
+            font-size: 14px;
+            box-sizing: border-box;
+            align-items: center;
+            background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
+            margin: 10px auto;
+            padding-top:12px;
+            padding-bottom: 12px;
+            transition: 0.5s ease-in-out;
+            background-size: 200% auto;          
+            box-shadow: 0 0 20px rgb(31, 0, 50);
+            border-radius: 30px;
+            border-color: transparent;
+            color: white;
+            text-decoration: none; 
+        }
+        .profile-pic{
+            display: flex;
+            align-items: center;
+            margin:10px auto;
+            border-radius: 50%;
+            width:30%;
+        }
+        .head{
+            margin: 11px auto;
+            font-size: 24px;
+            width: 390px;
+            font-size:20px;
+        }
+        .bio{
+            font-size: 15px;
+            width: 233px;
+            margin: 4px auto;
+            font-weight: normal;
+        }
+    }
 }
 
 
