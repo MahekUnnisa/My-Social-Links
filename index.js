@@ -11,8 +11,9 @@ app.listen(PORT, (error) => {
         console.log("Error Occured", error)
     }}
 );
-app.use('/static', express.static('static'))
-
+app.use('/',express.static('/'))
+app.use(express.static('C:\DEV\Portfolio\AllLinks\style.css'))
+//how to push static files in express?
 app.get('/',(req,res) => {
     res.status(200);
     res.sendFile(path.join(__dirname, 'index.html'));
