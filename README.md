@@ -1,2 +1,2 @@
 # My-Social-Links
-This reopsitory consists of a static page for all my social links.
+This repository consists of a static page for all my social links.
