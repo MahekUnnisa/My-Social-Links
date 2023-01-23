@@ -4,41 +4,61 @@
 }
 body{
     font-family:sans-serif;
-    margin:30px auto;
+    box-sizing: border-box;
     color:white;
-    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
     background: rgb(75, 0, 116);
     background: radial-gradient(circle, rgb(76, 1, 116) 0%, rgb(99, 1, 66) 100%);
 }
-.container{
+.container {
     display:flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+}
+
 .profile-pic{
     align-items: center;
-    margin:10px auto;
     width: 10%;
     border-radius: 50%;
 }
 .head{
-    margin: 11px auto;
     font-size: 24px;
     font-weight: bold;
     width: 500px;
+    margin-top: 20px;
 }
 .bio{
     margin: 6px auto;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 300;
     width: 500px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 150%;
 }
   
 .links {
     box-sizing: border-box;
     width: 600px;
+    height: 55px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
     margin: 10px auto;
     padding-top:12px;
@@ -46,7 +66,7 @@ body{
     transition: 0.5s ease-in-out;
     font-size: 18px;
     background-size: 200% auto;          
-    box-shadow: 0 0 20px rgb(31, 0, 50);
+    box-shadow: 0 0 20px 0px rgb(31, 0, 50);
     border-radius: 30px;
     border-color: transparent;
     color: white;
@@ -66,6 +86,7 @@ body{
     .links{
         width:300px;
         font-size: 14px;
+        height: 50px;
         box-sizing: border-box;
         align-items: center;
         background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
@@ -95,13 +116,15 @@ body{
     .bio{
         font-size: 15px;
         width: 350px;
-        margin: 4px auto;
-        font-weight: normal;
+        font-weight: 200;
+        line-height: 150%;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 400px) {
     .links{
         width:200px;
+        height: 40px;
         font-size: 14px;
         box-sizing: border-box;
         align-items: center;
@@ -125,7 +148,6 @@ body{
         width:30%;
     }
     .head{
-        margin: 11px auto;
         font-size: 24px;
         width: 390px;
         font-size:20px;
@@ -134,13 +156,28 @@ body{
         font-size: 15px;
         width: 233px;
         margin: 4px auto;
-        font-weight: normal;
+        font-weight: 200;
+        line-height: 150%;
     }
 
     @media screen and (max-width: 390px) {
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
         .links{
-            width:200px;
+            width:250px;
             font-size: 14px;
+            height: 40px;
             box-sizing: border-box;
             align-items: center;
             background-image: linear-gradient(to right, #bd035d 0%, #7802cd  51%, #bd035d  100%);
@@ -149,7 +186,7 @@ body{
             padding-bottom: 12px;
             transition: 0.5s ease-in-out;
             background-size: 200% auto;          
-            box-shadow: 0 0 20px rgb(31, 0, 50);
+            box-shadow: 0 0 10px rgb(31, 0, 50);
             border-radius: 30px;
             border-color: transparent;
             color: white;
@@ -163,16 +200,16 @@ body{
             width:30%;
         }
         .head{
-            margin: 11px auto;
             font-size: 24px;
             width: 390px;
             font-size:20px;
         }
         .bio{
-            font-size: 15px;
-            width: 233px;
-            margin: 4px auto;
-            font-weight: normal;
+            font-size: 12px;
+            line-height: 150%;
+            width: 300px;
+            margin-bottom: 20px;
+            font-weight: 200;
         }
     }
 }
